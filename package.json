@@ -1,6 +1,6 @@
 {
   "name": "nano_router.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "very tiny router library.",
   "main": "index.js",
   "scripts": {
