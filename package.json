@@ -1,0 +1,22 @@
+{
+  "name": "pico_router",
+  "version": "1.0.0",
+  "description": "very tiny router library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node RouterTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YusukeIwaki/pico_router.git"
+  },
+  "keywords": [
+    "route"
+  ],
+  "author": "YusukeIwaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YusukeIwaki/pico_router/issues"
+  },
+  "homepage": "https://github.com/YusukeIwaki/pico_router#readme"
+}
