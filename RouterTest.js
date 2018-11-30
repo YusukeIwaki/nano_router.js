@@ -8,6 +8,9 @@ router.on(/^こんにちは/, (obj) => {
 router.on("hoge", (obj) => {
     return "fuga";
 });
+router.on((key) => Number.isInteger(key - 0), (obj) => {
+    return "NUMBERS";
+})
 
 const assert = require('assert').strict;
 
@@ -19,6 +22,9 @@ assert.strictEqual(router.handle(o2["message"], o2), "fuga")
 
 o3 = {"message": "hage"}
 assert.strictEqual(router.handle(o3["message"], o3), null);
+
+o4 = {"message": "1234567890"}
+assert.strictEqual(router.handle(o4["message"], o4), "NUMBERS");
 
 
 router.onNoMatch((obj) => {

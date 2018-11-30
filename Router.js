@@ -7,7 +7,7 @@ class Router {
 
     on(pattern, handler) {
         if (typeof handler == "function") {
-            if (typeof pattern == "string" || pattern instanceof RegExp) {
+            if (typeof pattern == "string" || typeof pattern == "function" || pattern instanceof RegExp) {
                 this._patterns.push(pattern);
                 this._eventHandlers.push(handler);
             }
@@ -27,6 +27,8 @@ class Router {
             let patternIndex = this._patterns.findIndex((pattern) => {
                 if (typeof pattern == "string") {
                     return pattern == key;
+                } else if (typeof pattern == "function") {
+                    return !!pattern(key);
                 } else if (pattern instanceof RegExp) {
                     return pattern.test(key);
                 } else {
