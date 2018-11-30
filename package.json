@@ -1,5 +1,5 @@
 {
-  "name": "pico_router",
+  "name": "nano_router.js",
   "version": "1.0.0",
   "description": "very tiny router library.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YusukeIwaki/pico_router.git"
+    "url": "git+https://github.com/YusukeIwaki/nano_router.js.git"
   },
   "keywords": [
     "route"
@@ -16,7 +16,7 @@
   "author": "YusukeIwaki",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YusukeIwaki/pico_router/issues"
+    "url": "https://github.com/YusukeIwaki/nano_router.js/issues"
   },
-  "homepage": "https://github.com/YusukeIwaki/pico_router#readme"
+  "homepage": "https://github.com/YusukeIwaki/nano_router.js#readme"
 }
