@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "node RouterTest.js"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/YusukeIwaki/nano_router.js/issues"
   },
-  "homepage": "https://github.com/YusukeIwaki/nano_router.js#readme"
+  "homepage": "https://github.com/YusukeIwaki/nano_router.js#readme",
+  "devDependencies": {
+    "jasmine": "^3.3.0"
+  }
 }
